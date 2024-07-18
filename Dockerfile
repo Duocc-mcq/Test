@@ -25,7 +25,7 @@ COPY ./requirements_local /app/requirements_local.txt
 COPY ./package_info.json /app/
 COPY ./setup.py /app/
 COPY ./README.md /app/
-
+#
 # -----------------------------------
 # if you plan to use a GPU, you should install the 'tensorflow-gpu' package
 # RUN pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host=files.pythonhosted.org tensorflow-gpu
