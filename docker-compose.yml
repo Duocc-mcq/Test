@@ -1,0 +1,14 @@
+services:
+  deepface:
+    build: .
+    image: deepface:latest
+    container_name: deepface
+    ports:
+      - "5000:5000"
+    environment:
+      - CUDA_VISIBLE_DEVICES=0
+      - NVIDIA_VISIBLE_DEVICES=all
+#    volumes:
+#      - /usr/local/cuda-11.0/targets/x86_64-linux/lib:/usr/local/cuda-11.0/targets/x86_64-linux/lib
+#      - /usr/local/cuda/targets/x86_64-linux/lib/:/usr/local/cuda-11.0/targets/x86_64-linux/lib
+#    runtime: nvidia
