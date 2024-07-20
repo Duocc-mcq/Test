@@ -4,7 +4,7 @@ services:
     image: deepface:latest
     container_name: deepface
     ports:
-      - "5002:5000"
+      - "5003:5000"
     environment:
       - CUDA_VISIBLE_DEVICES=0
       - NVIDIA_VISIBLE_DEVICES=all
